@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Colorful Portfolio</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ff8a00, #da1b60);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            font-size: 1.2rem;
+            animation: fadeIn 2s ease;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.5rem;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #ffeb3b;
+            color: #333;
+        }
+
+        /* Skills Section */
+        #skills {
+            background-color: #ff4081;
+            color: white;
+        }
+
+        #skills .skills-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill-item {
+            background-color: white;
+            color: #ff4081;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .skill-item:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        #projects {
+            background-color: #69f0ae;
+            color: #333;
+        }
+
+        #projects .projects-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .project-item {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .project-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .project-item:hover {
+            background-color: #b2ff59;
+        }
+
+        .project-item a {
+            color: #69f0ae;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #2979ff;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin: 10px 0 5px;
+        }
+
+        form input, form textarea, form button {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        form button {
+            background-color: #ff4081;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        form button:hover {
+            background-color: #e91e63;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I am [Your Name], a [Your Profession]</p>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi! I'm [Your Name], a passionate [Your Profession]. I love creating unique and effective solutions that inspire and engage people.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">HTML</div>
+            <div class="skill-item">CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">React</div>
+            <div class="skill-item">Node.js</div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>A brief description of project 1.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>A brief description of project 2.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 [Your Name]. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert(`Thank you, ${name}! Your message has been sent.`);
+                document.getElementById('contact-form').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
